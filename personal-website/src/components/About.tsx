@@ -8,6 +8,7 @@ export default function About() {
       <p>LinkedIn | Github</p>
       <p>Amherst, MA</p>
       <p>Avid golfer (+2 handicap), lifelong hockey & soccer player, poker, fantasy football, Catan, weight lifting.</p>
+      <p>Add in skills, contact information here</p>
     </section>
   );
 }

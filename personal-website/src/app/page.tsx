@@ -6,10 +6,9 @@ import About from "../components/About";
 import Experience from "../components/Experience";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
-import Education from "../components/Education";
-import Contact from "../components/Contact";
 import Resume from "../components/Resume";
 import Footer from "../components/Footer";
+import Landing from "../components/Landing";
 import ShadcnNavigation from "../components/ui/shadcn-navigation";
 
 const navLinks = [
@@ -18,9 +17,6 @@ const navLinks = [
 	{ key: "experience", label: "Experience" },
 	{ key: "skills", label: "Skills" },
 	{ key: "projects", label: "Projects" },
-	{ key: "education", label: "Education" },
-	{ key: "contact", label: "Contact" },
-	{ key: "resume", label: "Download Resume" },
 ];
 
 function renderSection(section: string) {
@@ -33,24 +29,8 @@ function renderSection(section: string) {
 			return <Skills />;
 		case "projects":
 			return <Projects />;
-		case "education":
-			return <Education />;
-		case "contact":
-			return <Contact />;
-		case "resume":
-			return <Resume />;
 		default:
-			return (
-				<section>
-					<h1 className="text-4xl text-blue-500">Chris Pickreign!</h1>
-					<h2>Software Engineer | Consultant | Founder</h2>
-					<p>
-						Experienced technical leader with 20+ years in software engineering,
-						architecture, and team management. Passionate about building scalable
-						solutions and driving innovation.
-					</p>
-				</section>
-			);
+			return <Landing />; // Default to Home section
 	}
 }
 

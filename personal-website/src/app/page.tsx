@@ -17,9 +17,6 @@ const navLinks = [
 	{ key: "experience", label: "Experience" },
 	{ key: "skills", label: "Skills" },
 	{ key: "projects", label: "Projects" },
-	{ key: "education", label: "Education" },
-	{ key: "contact", label: "Contact" },
-	{ key: "resume", label: "Download Resume" },
 ];
 
 function renderSection(section: string) {

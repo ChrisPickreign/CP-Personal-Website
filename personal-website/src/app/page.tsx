@@ -6,7 +6,6 @@ import About from "../components/About";
 import Experience from "../components/Experience";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
-import Resume from "../components/Resume";
 import Footer from "../components/Footer";
 import Landing from "../components/Landing";
 import ShadcnNavigation from "../components/ui/shadcn-navigation";
@@ -46,7 +45,7 @@ export default function Home() {
 			/>
 			<main
 				className={styles.main}
-				style={{ fontFamily: "sans-serif", padding: "2rem" }}
+				style={{ fontFamily: "var(--font-geist-mono)", padding: "2rem" }}
 			>
 				{renderSection(activeSection)}
 			</main>

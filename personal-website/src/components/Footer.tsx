@@ -3,32 +3,11 @@ import { Github, Linkedin } from "lucide-react";
 export default function Footer() {
   return (
     <footer
-      style={{
-        width: "100vw",
-        height: "70px", // taller footer
-        background: "#171717",
-        color: "#ededed",
-        textAlign: "center",
-        borderTop: "1px solid #333",
-        position: "fixed",
-        bottom: 0,
-        left: 0,
-        display: "flex",           // center vertically
-        alignItems: "center",      // vertical alignment
-        justifyContent: "center",  // horizontal alignment
-      }}
+      className="w-full h-[70px] bg-white dark:bg-background text-muted-foreground dark:text-white border-t border-border fixed bottom-0 left-0 flex items-center justify-center"
     >
       <span>&copy; {new Date().getFullYear()} Chris Pickreign. All rights reserved.</span>
 
-   <div
-        style={{
-          position: "absolute",
-          right: "1.5rem",
-          display: "flex",
-          alignItems: "center", // vertical align within footer height
-          gap: "1rem",
-        }}
-      >
+      <div className="absolute right-6 flex items-center gap-4">
         <a
           href="https://github.com/ChrisPickreign"
           target="_blank"

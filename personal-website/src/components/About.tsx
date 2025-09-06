@@ -17,10 +17,10 @@ export default function About() {
           <Card className="bg-background rounded-xl shadow-md border border-muted p-8">
             <CardHeader>
               <CardTitle>University of Massachusetts Amherst — Commonwealth Honors College</CardTitle>
-              <CardDescription>B.S. Computer Science, BBA Finance, Dean's List all semesters, GPA: 3.80, ACT: 35</CardDescription>
+              <CardDescription>B.S. Computer Science, BBA Finance, Dean&apos;s List all semesters, GPA: 3.80, ACT: 35</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="mb-2 font-medium">Clubs: Consulting Group, Men's Club Golf</div>
+              <div className="mb-2 font-medium">Clubs: Consulting Group, Men&apos;s Club Golf</div>
               <div className="font-medium mb-1">Relevant Coursework:</div>
               <ul className="list-disc pl-6">
                 <li>Algorithms & Data Structures, Operating Systems, Databases, Distributed Systems, Information Retrieval, Machine Learning, Networks, Software Engineering, Corporate Finance, Investments, Derivatives, Risk Management, Financial Modeling</li>

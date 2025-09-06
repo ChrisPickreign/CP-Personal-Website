@@ -45,7 +45,7 @@ export default function Home() {
 			/>
 			<main
 				className={styles.main}
-				style={{ fontFamily: "sans-serif", padding: "2rem" }}
+				style={{ fontFamily: "var(--font-geist-mono)", padding: "2rem" }}
 			>
 				{renderSection(activeSection)}
 			</main>

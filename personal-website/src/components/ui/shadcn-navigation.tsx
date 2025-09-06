@@ -28,13 +28,12 @@ export default function ShadcnNavigation({
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
         <NavigationMenu className="pointer-events-auto">
-          <NavigationMenuList className="gap-2">
+          <NavigationMenuList className="gap-2 font-geist-mono">
             {navLinks.map((link) => {
               const isActive = activeSection === link.key
               return (
                 <NavigationMenuItem key={link.key}>
                   <NavigationMenuLink asChild>
-                    {/* Use <a> for SPA sections or swap to <Link href={`/${link.key}`}> for routes */}
                     <a
                       href={`#${link.key}`}
                       onClick={(e) => {
@@ -47,7 +46,7 @@ export default function ShadcnNavigation({
                       aria-current={isActive ? "page" : undefined}
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "bg-transparent",
+                        "bg-transparent font-geist-mono",
                         isActive
                           ? "bg-accent text-accent-foreground"
                           : "text-muted-foreground hover:bg-muted hover:text-foreground"

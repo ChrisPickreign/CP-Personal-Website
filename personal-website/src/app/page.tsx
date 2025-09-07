@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import styles from "./page.module.css";
-import About from "../components/About";
-import Experience from "../components/Experience";
-import Skills from "../components/Skills";
-import Projects from "../components/Projects";
-import Footer from "../components/Footer";
-import Landing from "../components/Landing";
-import ShadcnNavigation from "../components/ui/shadcn-navigation";
+import About from "../components/sections/About";
+import Experience from "../components/sections/Experience";
+import Skills from "../components/sections/Skills";
+import Projects from "../components/sections/Projects";
+import Footer from "../components/sections/Footer";
+import Landing from "../components/sections/Landing";
+import ShadcnNavigation from "../components/custom/shadcn-navigation";
 
 const navLinks = [
 	{ key: "home", label: "Home" },

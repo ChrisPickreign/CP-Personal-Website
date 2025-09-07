@@ -1,8 +1,9 @@
 
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import { Button } from "../components/ui/button";
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "../components/ui/card";
+import { Button } from "../ui/button";
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "../ui/card";
+import { GolferDialog } from "../custom/GolferDialog";
 
 
 interface LandingProps {
@@ -31,11 +32,11 @@ export default function Landing({ setActiveSection }: LandingProps) {
           <Image
             src="/HEADSHOT.JPG"
             alt="Chris Pickreign headshot"
-            width={120}
-            height={120}
+            width={150}
+            height={150}
             priority
             sizes="120px"
-            className="mx-auto mb-6 rounded-full ring-2 ring-primary/20 shadow-lg"
+            className="mx-auto mb-6 rounded-full ring-2 ring-primary/20 shadow-lg border-2 border-slate-800"
           />
 
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-foreground">
@@ -43,7 +44,7 @@ export default function Landing({ setActiveSection }: LandingProps) {
           </h1>
 
           <h2 className="mt-3 text-lg md:text-xl text-muted-foreground">
-            Software Engineer&nbsp;|&nbsp;Consultant&nbsp;|&nbsp;Founder
+            Software Engineer&nbsp; | &nbsp;Consultant&nbsp; | &nbsp;Founder
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-base md:text-lg text-muted-foreground">
@@ -51,7 +52,7 @@ export default function Landing({ setActiveSection }: LandingProps) {
           </p>
 
           <Button
-            className="mt-8 bg-slate-600 hover:bg-slate-700 text-white"
+            className="mt-8 bg-slate-800 hover:bg-slate-700 text-white"
             onClick={() => {
               setShowExplore(true);
               setTimeout(() => {
@@ -76,17 +77,18 @@ export default function Landing({ setActiveSection }: LandingProps) {
           </CardHeader>
           <CardContent className="text-center">
             <p className="text-lg text-muted-foreground mb-6">
-              Hi, I&apos;m Chris Pickreign—a passionate software engineer, consultant, and founder.<br /><br />
-              I recently graduated from the University of Massachusetts Amherst with degrees in Computer Science and Finance.<br /><br />
-              I love building impactful solutions and collaborating with teams to drive innovation. My experience spans full-stack development, strategy consulting, and technical leadership.<br /><br />
+              Hi, I&apos;m Chris Pickreign—a passionate software engineer, consultant, and founder<br /><br />
+              I am a recent graduate from the University of Massachusetts Amherst with dual degrees in CS and Finance<br /><br />
+              I love building impactful solutions and collaborating with teams to drive innovation. My experience spans full-stack development, strategy consulting and leadership, and small business entrepreneurship<br /><br />
+              In my free time I am an avid <GolferDialog /> and I enjoy playing poker, catan, and fantasy football among other strategy games<br /><br />
               Feel free to explore my work and connect!
             </p>
           </CardContent>
           <CardFooter className="flex flex-wrap justify-center gap-4 mt-8">
-            <Button className="bg-slate-600 hover:bg-slate-700 text-white" onClick={() => handleSection("projects")}>Projects</Button>
-            <Button className="bg-slate-600 hover:bg-slate-700 text-white" onClick={() => handleSection("experience")}>Experience</Button>
-            <Button className="bg-slate-600 hover:bg-slate-700 text-white" onClick={() => handleSection("about")}>About</Button>
-            <Button className="bg-slate-600 hover:bg-slate-700 text-white" onClick={() => handleSection("contact")}>Contact</Button>
+            <Button className="bg-slate-800 hover:bg-slate-700 text-white" onClick={() => handleSection("about")}>About</Button>
+            <Button className="bg-slate-800 hover:bg-slate-700 text-white" onClick={() => handleSection("experience")}>Experience</Button>
+            <Button className="bg-slate-800 hover:bg-slate-700 text-white" onClick={() => handleSection("skills")}>Skills</Button>
+            <Button className="bg-slate-800 hover:bg-slate-700 text-white" onClick={() => handleSection("projects")}>Projects</Button>
           </CardFooter>
         </Card>
       </section>

@@ -70,15 +70,15 @@ export default function Landing({ setActiveSection }: LandingProps) {
         ref={bioRef}
         className={`py-24 bg-white dark:bg-background flex items-center justify-center transition-opacity duration-500 ${showExplore ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
       >
-        <Card className="w-full max-w-3xl mx-auto">
+  <Card className="w-full max-w-5xl mx-auto">
           <CardHeader>
             <CardTitle className="text-3xl md:text-4xl font-bold mb-4 text-primary text-center">About Me</CardTitle>
           </CardHeader>
           <CardContent className="text-center">
             <p className="text-lg text-muted-foreground mb-6">
-              Hi, I&apos;m Chris Pickreign—a passionate software engineer, consultant, and founder.<br />
-              A recent graduate of the University of Massachusetts Amherst with degrees in Computer Science and Finance, I love building impactful solutions and collaborating with teams to drive innovation.<br />
-              My experience spans full-stack development, strategy consulting, and technical leadership.<br />
+              Hi, I&apos;m Chris Pickreign—a passionate software engineer, consultant, and founder.<br /><br />
+              I recently graduated from the University of Massachusetts Amherst with degrees in Computer Science and Finance.<br /><br />
+              I love building impactful solutions and collaborating with teams to drive innovation. My experience spans full-stack development, strategy consulting, and technical leadership.<br /><br />
               Feel free to explore my work and connect!
             </p>
           </CardContent>
